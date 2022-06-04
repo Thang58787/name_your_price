@@ -1,6 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+class Product {
+  final String name;
+  final double price;
+
+  Product(this.name, this.price);
+}
+
+final products = [
+  Product("Carrots", 34),
+  Product("Fishes", 32),
+  Product("Potatoes", 45),
+  Product("Bananas", 35),
+  Product("Longans", 55),
+];
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
